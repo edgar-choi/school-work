@@ -8,9 +8,9 @@
 namespace sict {
 	class CRA_Account {
 		//Class attributes
-		char familyname[] = {};
-		char givenname[] = {};
-		char SIN[] = {};
+		char familyname[max_name_length];
+		char givenname[max_name_length];
+		char SIN[];
 
 		void set(const char* familyName, const char* givenName, int sin);
 		bool isEmpty() const;
