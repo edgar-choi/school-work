@@ -1,6 +1,7 @@
 #pragma once
 #ifndef SICT_CRA_ACCOUNT_H
 #define SICT_CRA_ACCOUNT_H
+#include <iostream>
 // predefine some values
 #define max_name_length 40
 #define min_sin 100000000
@@ -11,7 +12,7 @@ namespace sict {
 		char familyname[max_name_length];
 		char givenname[max_name_length];
 		char SIN[];
-
+	public:
 		void set(const char* familyName, const char* givenName, int sin);
 		bool isEmpty() const;
 		void display() const;
